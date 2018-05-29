@@ -11,23 +11,23 @@
                   echo $rss->items;
                   echo '</pre>';
 
-                  foreach ( $rss->items as $item ) {
-                          // echo "Title: " . utf8_encode($item['title']);
-                          //echo "Published: " . date("n/j/o h:i A", $published);
-                          // echo "Content: " . utf8_encode(implode(",", $item['content']));
-                          echo '<li class="rssRow odd">';
-                          echo '<h4>';
-                          echo '<a href="';
-                          echo  $item['link'];
-                          echo  '" title="" target="_self">';
-                          echo utf8_encode($item['title']);
-                          echo '</a></h4><div>';
-                          //echo date("n/j/o h:i A", $item['pubdate');
-                          echo '</div>';
-                          echo utf8_encode(implode(",", $item['content']));
-                          echo '</li>';
+                  // foreach ( $rss->items as $item ) {
+                  //         // echo "Title: " . utf8_encode($item['title']);
+                  //         //echo "Published: " . date("n/j/o h:i A", $published);
+                  //         // echo "Content: " . utf8_encode(implode(",", $item['content']));
+                  //         echo '<li class="rssRow odd">';
+                  //         echo '<h4>';
+                  //         echo '<a href="';
+                  //         echo  $item['link'];
+                  //         echo  '" title="" target="_self">';
+                  //         echo utf8_encode($item['title']);
+                  //         echo '</a></h4><div>';
+                  //         //echo date("n/j/o h:i A", $item['pubdate');
+                  //         echo '</div>';
+                  //         echo utf8_encode(implode(",", $item['content']));
+                  //         echo '</li>';
 
-                  }
+                  // }
                 ?>
                 </ul></div></div>
 </body>

@@ -7,6 +7,10 @@
                   $url = 'http://environnement.ca/blog/?feed=rss2';
                   $rss = fetch_rss($url);
 
+                  echo '<pre>';
+                  echo $rss->items;
+                  echo '</pre>';
+
                   foreach ( $rss->items as $item ) {
                           // echo "Title: " . utf8_encode($item['title']);
                           //echo "Published: " . date("n/j/o h:i A", $published);

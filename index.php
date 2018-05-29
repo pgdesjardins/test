@@ -1,4 +1,6 @@
+<?php
 require('../magpierss-master/rss_fetch.inc')
+?>
 
 <html>
 <body>

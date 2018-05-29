@@ -9,10 +9,10 @@ include '../magpierss-master/rss_fetch.inc';
                 <?php
                 
                   $url = 'http://environnement.ca/blog/?feed=rss2';
-                  $rss = fetch_rss($url);
+                  //$rss = fetch_rss($url);
 
                   echo '<pre>';
-                  echo serialize($rss);
+                  echo 1+2;
                   echo '</pre>';
 
                   // foreach ( $rss->items as $item ) {

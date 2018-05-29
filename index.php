@@ -2,14 +2,13 @@
 <body>
 <h2>Blog</h2>
                 <div id="feed" class="rssFeed"><div class="rssBody"><ul>
-                --	<?php echo 1+2 ?> --
                 <?php
                   require('../magpierss-master/rss_fetch.inc');
                   $url = 'http://environnement.ca/blog/?feed=rss2';
-                  $rss = fetch_rss($url);
+                  // $rss = fetch_rss($url);
 
                   echo '<pre>';
-                  echo 123;
+                  echo $url;
                   echo '</pre>';
 
                   // foreach ( $rss->items as $item ) {

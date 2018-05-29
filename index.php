@@ -1,5 +1,5 @@
 <?php
-require('../magpierss-master/rss_fetch.inc')
+include '../magpierss-master/rss_fetch.inc';
 ?>
 
 <html>

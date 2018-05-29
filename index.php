@@ -8,7 +8,7 @@
                   $rss = fetch_rss($url);
 
                   echo '<pre>';
-                  echo $rss->items;
+                  echo 123;
                   echo '</pre>';
 
                   // foreach ( $rss->items as $item ) {

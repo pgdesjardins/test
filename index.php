@@ -3,7 +3,7 @@
 <h2>Blog</h2>
                 <div id="feed" class="rssFeed"><div class="rssBody"><ul>
                 <?php
-                  require('../magpierss-master/rss_fetch.inc');
+                  // require('../magpierss-master/rss_fetch.inc');
                   $url = 'http://environnement.ca/blog/?feed=rss2';
                   // $rss = fetch_rss($url);
 

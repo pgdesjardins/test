@@ -10,7 +10,7 @@ require_once(dirname(__FILE__).'/Feed.php');
               <?php
               $url = 'http://environnement.ca/blog/?feed=rss2';
               $homepage = file_get_contents($url);
-echo '<pre>'.$homepage;.'</pre>'
+              echo '<pre>'.$homepage.'</pre>';
               ?>
 
                 <div id="feed" class="rssFeed"><div class="rssBody"><ul>

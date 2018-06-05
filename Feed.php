@@ -208,6 +208,9 @@ class Feed
 			if ($user !== null || $pass !== null) {
 				curl_setopt($curl, CURLOPT_USERPWD, "$user:$pass");
 			}
+
+			curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+    'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'));
 			curl_setopt($curl, CURLOPT_HEADER, false);
 			curl_setopt($curl, CURLOPT_TIMEOUT, 20);
 			curl_setopt($curl, CURLOPT_ENCODING , '');
@@ -219,10 +222,8 @@ class Feed
 			return curl_errno($curl) === 0 && curl_getinfo($curl, CURLINFO_HTTP_CODE) === 200
 				? $result
 				: false;
-
 		} elseif ($user === null && $pass === null) {
 			return file_get_contents($url);
-
 		} else {
 			throw new FeedException('PHP extension CURL is not loaded.');
 		}

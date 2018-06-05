@@ -35,7 +35,7 @@ include '../magpierss-master/rss_fetch.inc';
                 ?>
                 </ul></div></div>
                 
-                <?php
+                <!-- <?php
                 $url = "http://environnement.ca/blog/?feed=rss2";
 $xml = simplexml_load_file($url);
 for($i = 0; $i < 1; $i++){
@@ -49,7 +49,7 @@ for($i = 0; $i < 1; $i++){
   echo "<a target='_blank' href='$link'><b>$title</b></a>"; // Title of post
   echo "$description"; // Description
   echo "<br />$pubDate<br /><br />"; // Date Published
-  ?>
+  ?> -->
 }
 </body>
 </html>

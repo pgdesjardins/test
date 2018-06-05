@@ -36,7 +36,7 @@ include '../magpierss-master/rss_fetch.inc';
                 </ul></div></div>
                 
                 <?php
-                $url = "http://www.realbeta.net63.net/blog/rss?id=1";
+                $url = "http://environnement.ca/blog/?feed=rss2";
 $xml = simplexml_load_file($url);
 for($i = 0; $i < 1; $i++){
   

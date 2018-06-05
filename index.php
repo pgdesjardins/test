@@ -38,6 +38,9 @@ include '../magpierss-master/rss_fetch.inc';
                 <?php
                 $url = "http://environnement.ca/blog/?feed=rss2";
 $xml = simplexml_load_file($url);
+echo "<pre>";
+echo $xml;
+echo "</pre>";
 for($i = 0; $i < 1; $i++){
   
   $title = $xml->channel->item[$i]->title;

@@ -7,6 +7,12 @@ require_once(dirname(__FILE__).'/Feed.php');
 <html>
 <body>
 <h2>Blog</h2>
+              <?php
+              $url = 'http://environnement.ca/blog/?feed=rss2';
+              $homepage = file_get_contents($url);
+echo '<pre>'.$homepage;.'</pre>'
+              ?>
+
                 <div id="feed" class="rssFeed"><div class="rssBody"><ul>
                 <!-- <?php
                 
@@ -53,6 +59,8 @@ foreach ($rss->item as $item) {
   echo 'HTML encoded content: ', $item->{'content:encoded'};
 }
   ?>
+
+
 
 </body>
 </html>

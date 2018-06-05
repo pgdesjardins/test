@@ -9,8 +9,18 @@ require_once(dirname(__FILE__).'/Feed.php');
 <h2>Blog</h2>
               <?php
               $url = 'http://environnement.ca/blog/?feed=rss2';
-              $homepage = file_get_contents($url);
-              echo '<pre>'.$homepage.'</pre>';
+
+              $opts = array(
+  'http'=>array(
+    'header'=>"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36")
+);
+
+$context = stream_context_create($opts);
+
+// Open the file using the HTTP headers set above
+$file = file_get_contents($url, false, $context);
+
+              echo '<pre>'.$file.'</pre>';
               ?>
 
                 <div id="feed" class="rssFeed"><div class="rssBody"><ul>

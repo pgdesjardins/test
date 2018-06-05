@@ -1,6 +1,6 @@
 <?php
 // include '../magpierss-master/rss_fetch.inc';
-require_once('Feed.php');
+require_once('./Feed.php');
 ?>
 
 <html>
